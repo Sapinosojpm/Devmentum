@@ -14,7 +14,7 @@ export default function Navbar() {
     { name: "Projects", href: "/#projects" },
     { name: "FAQ", href: "/#faq" },
   ];
-
+  // Navbar component with responsive design and animation
   return (
     <motion.nav
       className="fixed top-5 left-0 right-0 z-50 px-4"
