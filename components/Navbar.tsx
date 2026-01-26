@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { MenuIcon, XIcon } from "lucide-react";
 import { PrimaryButton } from "./Buttons";
 import { useState } from "react";
@@ -24,8 +25,14 @@ export default function Navbar() {
       transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between bg-black/50 backdrop-blur-md border border-white/4 rounded-2xl p-3">
-        <Link href="/#" className="text-2xl font-extrabold">
-          <h2>Devmentum</h2>
+        <Link href="/" className="text-2xl font-extrabold">
+          <Image
+            src="./Devmentum logo.png"
+            alt="Devmentum Logo"
+            width={40}
+            height={40}
+            className="invert"
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
