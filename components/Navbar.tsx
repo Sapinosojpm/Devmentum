@@ -27,10 +27,10 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex items-center justify-between bg-black/50 backdrop-blur-md border border-white/4 rounded-2xl p-3">
         <Link href="/" className="text-2xl font-extrabold">
           <Image
-            src="./Devmentum logo.png"
+            src="./devmentum2.png"
             alt="Devmentum Logo"
-            width={40}
-            height={40}
+            width={120}
+            height={80}
             className="invert"
           />
         </Link>

@@ -48,6 +48,10 @@ export const metadata: Metadata = {
     creator: "@prebuiltui",
   },
 
+  icons: {
+    icon: "/Devmentum logo.png",
+  },
+
   robots: {
     index: true,
     follow: true,
