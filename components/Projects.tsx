@@ -6,7 +6,7 @@ import Image from "next/image";
 const CATEGORY_ORDER: { key: Project["category"]; label: string }[] = [
   { key: "web", label: "Web Development" },
   { key: "graphic", label: "Graphic Design" },
-  { key: "email", label: "Email Design" },
+  // { key: "email", label: "Email Design" },
   { key: "other", label: "Other Projects" },
 ];
 
@@ -23,7 +23,7 @@ function ProjectCard({ project }: { project: Project }) {
         />
       </div>
       <h4 className="text-lg font-semibold text-white mb-2">{project.title}</h4>
-      <p className="text-sm text-gray-300 mb-3">{project.desc}</p>
+      <p className="text-sm text-gray-300 mb-3 line-clamp-2">{project.desc}</p>
       {project.url ? (
         <a
           href={project.url}

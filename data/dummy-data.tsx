@@ -191,10 +191,6 @@ export const footerLinks = [
   },
   {
     title: "Resources",
-    links: [
-      { name: "Blog", url: "#" },
-      { name: "Case Studies", url: "#" },
-      { name: "Free Tools", url: "#" },
-    ],
+    links: [{ name: "Blog", url: "#" }],
   },
 ];

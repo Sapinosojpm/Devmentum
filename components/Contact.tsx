@@ -13,7 +13,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`,
     );
-    window.location.href = `mailto:hello@printastic.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:devmentum@gmail.com?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -65,11 +65,11 @@ export default function Contact() {
             </li>
             <li>
               <a
-                href="mailto:hello@printastic.com"
+                href="mailto:devmentum@gmail.com"
                 className="flex items-center gap-3 text-gray-300 hover:text-white"
               >
                 <MailIcon className="w-6 h-6" />
-                hello@printastic.com
+                devmentum@gmail.com
               </a>
             </li>
           </ul>

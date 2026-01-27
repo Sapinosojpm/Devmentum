@@ -1,12 +1,8 @@
-import {
-  ArrowRightIcon,
-  PlayIcon,
-  ZapIcon,
-  CheckIcon,
-  Link,
-} from "lucide-react";
-import { PrimaryButton, GhostButton } from "./Buttons";
+import { PlayIcon, ZapIcon, CheckIcon } from "lucide-react";
+import { GhostButton } from "./Buttons";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const trustedUserImages = [
@@ -16,7 +12,7 @@ export default function Hero() {
   ];
 
   const mainImageUrl =
-    "https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=1600&auto=format&fit=crop";
+    "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?q=80&w=1496&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   const galleryStripImages = [
     "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=100",
@@ -53,7 +49,7 @@ export default function Hero() {
               >
                 <div className="flex -space-x-2">
                   {trustedUserImages.map((src, i) => (
-                    <img
+                    <Image
                       key={i}
                       src={src}
                       alt={`Client ${i + 1}`}
@@ -118,17 +114,12 @@ export default function Hero() {
                   delay: 0.3,
                 }}
               >
-                <Link href="/" className="w-full sm:w-auto">
-                  <PrimaryButton className="max-sm:w-full py-3 px-7">
-                    Start your project
-                    <ArrowRightIcon className="size-4" />
-                  </PrimaryButton>
+                <Link href="/#projects" className="w-full sm:w-auto">
+                  <GhostButton className="max-sm:w-full max-sm:justify-center py-3 px-5">
+                    <PlayIcon className="size-4" />
+                    View our work
+                  </GhostButton>
                 </Link>
-
-                <GhostButton className="max-sm:w-full max-sm:justify-center py-3 px-5">
-                  <PlayIcon className="size-4" />
-                  View our work
-                </GhostButton>
               </motion.div>
 
               <motion.div
@@ -195,10 +186,7 @@ export default function Hero() {
                   </div>
 
                   <div className="absolute right-4 bottom-4">
-                    <button className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-white/6 backdrop-blur-sm hover:bg-white/10 transition focus:outline-none">
-                      <PlayIcon className="size-4" />
-                      <span className="text-xs">See case study</span>
-                    </button>
+                    <button className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-white/6 backdrop-blur-sm hover:bg-white/10 transition focus:outline-none"></button>
                   </div>
                 </div>
               </motion.div>
