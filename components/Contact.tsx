@@ -47,7 +47,7 @@ export default function Contact() {
             </li>
             <li>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/devmentumdigitalagency/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-gray-300 hover:text-white"
